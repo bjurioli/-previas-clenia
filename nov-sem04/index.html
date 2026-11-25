@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Prévia do feed Clênia | Semana 04 de novembro</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Questrial&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#e7eae3;--card:#fff;--ink:#272b34;--soft:#5d6270;--line:#d3d7cd;--acc:#904619;--ok:#4f6a2a;--okbg:#e4ead2;--fix:#a8481a;--fixbg:#f7e3d6}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Figtree,system-ui,sans-serif;overflow-x:clip}
+.wrap{max-width:520px;margin:0 auto;padding:28px 16px 64px}
+h1{font:400 34px/1.08 Questrial,"Century Gothic",sans-serif;letter-spacing:-.03em;margin:0 0 10px;text-wrap:balance}
+h3{font:600 15px/1.3 Figtree,sans-serif;margin:0 0 8px}
+.intro{color:var(--soft);margin:0 0 18px}
+.who{position:sticky;top:0;z-index:5;background:var(--bg);padding:10px 0 12px;margin-bottom:14px}
+.who label{display:block;font-size:13px;font-weight:600;color:var(--soft);margin-bottom:6px}
+.who input{width:100%;font:16px Figtree,sans-serif;padding:12px 14px;border-radius:12px;border:1.5px solid var(--line);background:#fff;color:var(--ink)}
+.who input.need{border-color:var(--fix);box-shadow:0 0 0 3px var(--fixbg)}
+.prof{background:var(--card);border-radius:18px;padding:18px 16px 14px;margin-bottom:28px}
+.ph{display:flex;align-items:center;gap:14px;margin-bottom:12px}
+.av{width:72px;height:72px;border-radius:50%;object-fit:cover;flex:none;outline:2px solid var(--acc);outline-offset:3px}
+.handle{font-weight:600;font-size:17px}
+.stats{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:14px;margin-top:4px}.stats b{font-weight:600}
+.bio2{font-size:14px;line-height:1.45;white-space:pre-line;margin:0 2px 14px}.bio2 b{font-weight:600}.lk{font-weight:600;color:#11314c}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:3px;border-radius:10px;overflow:hidden}
+.tile{position:relative;aspect-ratio:4/5;border:0;padding:0;background:#11314c;cursor:pointer;display:block}
+.tile img{width:100%;height:100%;object-fit:cover;display:block}
+.tile .n{position:absolute;left:6px;top:6px;background:rgba(39,43,52,.78);color:#e7eae3;font-size:12px;font-weight:600;border-radius:20px;padding:1px 8px}
+.tile .st{position:absolute;right:6px;bottom:6px;font-size:11px;font-weight:600;border-radius:20px;padding:1px 8px}
+.gnote{font-size:13px;color:var(--soft);margin:10px 2px 0}
+.post{background:var(--card);border-radius:18px;overflow:hidden;margin-bottom:26px;scroll-margin-top:96px}
+.top{display:flex;align-items:center;gap:10px;padding:12px 14px}
+.top img{width:34px;height:34px;border-radius:50%;object-fit:cover}
+.top .h{font-weight:600;font-size:15px;line-height:1.2}.top .t{font-size:13px;color:var(--soft)}
+.top .k{margin-left:auto;font-size:12px;font-weight:600;color:var(--acc);white-space:nowrap}
+.media{position:relative;aspect-ratio:9/16;background:#000}
+.media video,.media img{width:100%;height:100%;object-fit:cover;display:block}
+.soon{position:absolute;left:12px;right:12px;bottom:12px;background:rgba(17,49,76,.9);color:#e7eae3;font-size:14px;border-radius:12px;padding:10px 12px}
+.cap{padding:14px 16px 6px;font-size:15px;line-height:1.55;white-space:pre-line}.cap b{font-weight:600}
+.sec{margin:8px 14px 0;padding:14px 0 4px;border-top:1px solid var(--line)}
+.list{display:grid;gap:8px;margin:0 0 10px;padding:0;list-style:none}
+.list li{background:var(--bg);border-radius:12px;padding:8px 12px;font-size:14px}
+.list .m{font-size:12px;color:var(--soft)}
+.list .x{white-space:pre-line}
+.empty{font-size:13px;color:var(--soft);margin:0 0 10px}
+.row{display:flex;gap:8px;align-items:flex-end}
+textarea{flex:1;font:16px/1.4 Figtree,sans-serif;color:var(--ink);background:#fff;border:1.5px solid var(--line);border-radius:12px;padding:10px 12px;resize:vertical;min-height:46px}
+textarea:focus,.who input:focus{outline:3px solid var(--acc);outline-offset:1px;border-color:transparent}
+.btn{font:600 14px Figtree,sans-serif;border:0;border-radius:24px;padding:11px 16px;min-height:44px;cursor:pointer;background:var(--ink);color:#fff;white-space:nowrap}
+.btn:disabled{opacity:.5;cursor:default}
+.btn:focus-visible,.tile:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.dec{margin:14px 14px 16px;padding:14px;border-radius:14px;background:var(--bg)}
+.dec .btns{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.b-ok{background:var(--ok)}.b-fix{background:var(--fix)}
+.status{font-size:14px;margin:0 0 10px}
+.chip{display:inline-block;font-size:12px;font-weight:600;border-radius:20px;padding:2px 10px}
+.c-ok{background:var(--okbg);color:var(--ok)}.c-fix{background:var(--fixbg);color:var(--fix)}.c-none{background:#fff;color:var(--soft)}
+.fixbox{display:none;margin-top:10px}.fixbox.on{display:block}
+.fixbox .row{margin-top:6px}
+.msg{font-size:13px;margin:8px 0 0;color:var(--fix);min-height:1px}
+.warn{background:var(--fixbg);color:var(--fix);border-radius:12px;padding:10px 12px;font-size:14px;margin-bottom:16px;display:none}
+.foot{font-size:13px;color:var(--soft);text-align:center;margin-top:8px}
+</style>
+</head>
+<body>
+<main class="wrap">
+<h1>Prévia do feed: reels da semana 04 de novembro</h1>
+<p class="intro">Assista aos vídeos e leia as legendas. Você pode comentar no vídeo ou na legenda e, no fim de cada post, escolher entre aprovar ou enviar pra correção.</p>
+<div class="warn" id="warn">Os comentários ainda não estão ligados à planilha. A página funciona só pra visualização por enquanto.</div>
+
+<div class="who"><label for="nome">Seu nome (aparece em cada comentário e aprovação)</label>
+<input id="nome" autocomplete="name" placeholder="Ex.: Clênia Oliveira" maxlength="80"></div>
+
+<section class="prof" aria-label="Como o perfil fica">
+<div class="ph"><img class="av" src="media/avatar.jpg" alt="Foto de perfil da Clênia">
+<div><div class="handle">cleniaoliveirarv</div><div class="stats"><span><b>804</b> posts</span><span><b>2.760</b> seguidores</span><span><b>621</b> seguindo</span></div></div></div>
+<div class="bio2"><b>Clênia Oliveira I Desenvolvimento Humano</b>
+Performance sustentável para líderes e equipes
+⬇️ Entre para Altum
+<span class="lk">altum.cleniaoliveira.com e mais 1</span></div>
+<div class="grid" id="grid"></div>
+<p class="gnote">Assim as capas aparecem no perfil, no recorte 4:5. O mais recente fica no canto superior esquerdo.</p>
+</section>
+
+<div id="posts"></div>
+<p class="foot">Prévia de aprovação preparada pela PADALU. Os vídeos estão em qualidade reduzida só pra visualização.</p>
+</main>
+<script src="../config.js"></script>
+<script>
+{
+const PREVIA="nov-sem04-reels";
+const P=[
+{id:"vagas",t:"Anúncio das vagas da Altum",cover:"media/capa-altum.jpg",video:"media/altum.mp4",cap:`Eu relutei por 6 anos.
+
+Durante muito tempo, as pessoas me perguntavam: "por que você não abre uma mentoria?". Era gente que não tinha como levar um treinamento pra dentro da empresa, porque às vezes a empresa era só ela e mais uma pessoa.
+
+E eu sempre achava que não era a hora.
+
+Esse ano, a minha mentora me desafiou. Porque eu também sou mentorada, e sei o quanto um desafio bem colocado muda o rumo de alguém. O Conversas que Geram Resultados foi desafio dela. Abrir a mentoria também.
+
+Então eu decidi: hoje, oficialmente, abro a Altum, a minha mentoria de liderança.
+
+São 6 meses pra você desenvolver a sua performance como líder, começando pelo seu comportamento.
+
+As inscrições vão até 30 de novembro.
+
+Acesse o link da bio.`},
+{id:"granja",t:"Depoimento da granja",cover:"media/capa-granja.jpg",video:"",cap:`Da 29ª posição ao 1º lugar.
+
+Esse é o caminho de uma granja de suínos que eu acompanhei, numa indústria de proteína animal. Quando a gente começou, o cenário era de alta rotatividade, baixa produtividade e conflitos que se arrastavam.
+
+Foram 6 meses de jornada de desenvolvimento com os líderes. A granja subiu pro 3º lugar do Ranking Global Genético de Granjas Suínas, ficou entre as melhores por 4 anos seguidos e, em outubro, chegou ao 1º lugar.
+
+Ninguém trocou a equipe inteira. O que mudou foi a liderança.
+
+Quando o líder sobe, a equipe vai junto.
+
+É esse trabalho que eu faço na Altum. Inscrições até 30 de novembro.
+
+Acesse o link da bio.`},
+{id:"areas",t:"Todas as áreas",cover:"media/capa-areas.jpg",video:"media/areas.mp4",cap:`Liderança não fica no escritório.
+
+Uma mentorada minha, gerente numa fazenda lá em Mineiros, me disse no meio do processo: "Nossa, eu nunca imaginei que numa mentoria de liderança eu ia ter tarefa pra fazer na minha vida social."
+
+E tem que ter.
+
+O jeito como você conversa, decide e reage sob pressão não muda quando você sai do trabalho. Ele vai com você pra casa, pros amigos, pra família.
+
+Por isso, na Altum, o trabalho começa pelo seu comportamento. E quando ele muda, muda em todas as áreas.
+
+Inscrições abertas até 30 de novembro. Acesse o link da bio.`},
+{id:"bia",t:"Depoimento da Bia",cover:"media/capa-bia.jpg",video:"",cap:`Ela saiu de analista pra líder do dia pra noite. E o resultado foi insônia.
+
+Essa história é mais comum do que parece. A pessoa é promovida porque é boa no que faz e, no dia seguinte, já tem uma equipe inteira pra conduzir, sem nunca ter aprendido a fazer isso.
+
+A Bia contou a dela no Conversas que Geram Resultados, e eu tenho certeza de que muita gente vai se reconhecer.
+
+70% dos líderes assumem o cargo sem o treinamento necessário. A insônia, a sobrecarga e a sensação de estar sempre atrasado são o preço disso.
+
+Liderar se aprende. E foi pra isso que eu criei a Altum.
+
+Inscrições até 30 de novembro. Acesse o link da bio.`},
+{id:"significado",t:"O significado de Altum",cover:"media/capa-significado.jpg",video:"",cap:`Altum vem do latim e tem dois sentidos.
+
+O primeiro é alto, elevado: algo que está no topo.
+
+O segundo é o fundo: a profundeza, a imensidão, o alto-mar.
+
+Escolhi esse nome porque é exatamente isso que eu vejo acontecer com os líderes que eu acompanho. Quem quer subir precisa, antes, ir mais fundo: entender como decide, como conversa e como reage quando a pressão aperta.
+
+É por isso que as ondas estão dentro do A.
+
+Altum é a minha mentoria de liderança. Inscrições até 30 de novembro.
+
+Acesse o link da bio.`}
+];
+const API=(window.PREVIAS_API||"").trim();
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const placeholder=`<div style="width:100%;height:100%;display:grid;place-items:center;background:#11314c;color:#e7eae3;font:400 26px/1.2 Questrial,sans-serif">Altum</div>`;
+const nomeEl=document.getElementById("nome");
+try{nomeEl.value=localStorage.getItem("previas-nome")||""}catch(e){}
+nomeEl.addEventListener("input",()=>{nomeEl.classList.remove("need");try{localStorage.setItem("previas-nome",nomeEl.value)}catch(e){}});
+let LINHAS=[];
+
+function renderGrid(){
+ document.getElementById("grid").innerHTML=P.map((p,i)=>({p,i})).reverse().map(({p,i})=>{
+  const d=ultimaDecisao(p.id);
+  const st=d?`<span class="st ${d.decisao==="aprovado"?"c-ok":"c-fix"}">${d.decisao==="aprovado"?"Aprovado":"Correção"}</span>`:"";
+  return `<button class="tile" data-go="${p.id}" aria-label="Ver post ${i+1}: ${esc(p.t)}">${p.cover?`<img src="${p.cover}" alt="" loading="lazy">`:placeholder}<span class="n">${i+1}</span>${st}</button>`}).join("");
+}
+function ultimaDecisao(id){const d=LINHAS.filter(l=>l.post===id&&l.tipo==="decisao");return d[d.length-1]}
+function quando(iso){const d=new Date(iso);return isNaN(d)?"":d.toLocaleString("pt-BR",{day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"})}
+
+document.getElementById("posts").innerHTML=P.map((p,i)=>`
+<article class="post" id="${p.id}">
+<div class="top"><img src="media/avatar.jpg" alt=""><div><div class="h">cleniaoliveirarv</div><div class="t">${esc(p.t)}</div></div><span class="k">Post ${i+1} de ${P.length}</span></div>
+<div class="media">${p.video?`<video src="${p.video}" poster="${p.cover}" controls playsinline preload="none"></video>`:(p.cover?`<img src="${p.cover}" alt="Capa do reel ${esc(p.t)}">`:placeholder)}
+${p.video?"":`<div class="soon">Por enquanto, só a capa. O vídeo entra aqui assim que for exportado em versão leve.</div>`}</div>
+<section class="sec"><h3>Comentários no vídeo</h3><ul class="list" data-l="${p.id}|video"></ul>
+<div class="row"><textarea rows="1" data-t="${p.id}|video" aria-label="Comentário no vídeo do post ${i+1}" placeholder="Comentar o vídeo"></textarea><button class="btn" data-send="${p.id}|video">Comentar</button></div><p class="msg" data-m="${p.id}|video"></p></section>
+<div class="cap"><b>cleniaoliveirarv</b> ${esc(p.cap)}</div>
+<section class="sec"><h3>Comentários na legenda</h3><ul class="list" data-l="${p.id}|legenda"></ul>
+<div class="row"><textarea rows="1" data-t="${p.id}|legenda" aria-label="Comentário na legenda do post ${i+1}" placeholder="Comentar a legenda"></textarea><button class="btn" data-send="${p.id}|legenda">Comentar</button></div><p class="msg" data-m="${p.id}|legenda"></p></section>
+<div class="dec"><p class="status" data-s="${p.id}"></p>
+<div class="btns"><button class="btn b-ok" data-ok="${p.id}">Aprovar o post</button><button class="btn b-fix" data-fixopen="${p.id}">Enviar pra correção</button></div>
+<div class="fixbox" data-fb="${p.id}"><label class="m" for="fx-${p.id}">O que precisa ser corrigido?</label>
+<div class="row"><textarea id="fx-${p.id}" rows="2" data-t="${p.id}|post" placeholder="Descreva a correção"></textarea><button class="btn b-fix" data-fix="${p.id}">Enviar</button></div></div>
+<p class="msg" data-m="${p.id}|post"></p></div>
+</article>`).join("");
+
+function renderAll(){
+ document.querySelectorAll("[data-l]").forEach(ul=>{
+  const [id,onde]=ul.dataset.l.split("|");
+  const cs=LINHAS.filter(l=>l.post===id&&l.tipo==="comentario"&&l.onde===onde);
+  ul.innerHTML=cs.map(c=>`<li><div class="m"><b>${esc(c.nome)}</b> · ${esc(quando(c.data))}</div><div class="x">${esc(c.texto)}</div></li>`).join("");
+  let e=ul.nextElementSibling;
+  if(!cs.length&&!(e&&e.classList.contains("empty")))ul.insertAdjacentHTML("afterend",`<p class="empty">Nenhum comentário ainda.</p>`);
+  if(cs.length&&e&&e.classList.contains("empty"))e.remove();
+ });
+ P.forEach(p=>{
+  const d=ultimaDecisao(p.id),el=document.querySelector(`[data-s="${p.id}"]`);
+  el.innerHTML=d?`<span class="chip ${d.decisao==="aprovado"?"c-ok":"c-fix"}">${d.decisao==="aprovado"?"Aprovado":"Enviado pra correção"}</span> por <b>${esc(d.nome)}</b> em ${esc(quando(d.data))}${d.decisao!=="aprovado"&&d.texto?`<br><span class="m">${esc(d.texto)}</span>`:""}`:`<span class="chip c-none">Aguardando decisão</span>`;
+ });
+ renderGrid();
+}
+
+async function carregar(){
+ if(!API){document.getElementById("warn").style.display="block";renderAll();return}
+ try{const r=await fetch(API+"?previa="+encodeURIComponent(PREVIA));const j=await r.json();if(j&&j.ok)LINHAS=j.linhas||[]}catch(e){}
+ renderAll();
+}
+function precisaNome(){const n=nomeEl.value.trim();if(!n){nomeEl.classList.add("need");nomeEl.focus();return ""}return n}
+async function enviar(dados,msgKey,btn){
+ const m=document.querySelector(`[data-m="${msgKey}"]`);m.textContent="";
+ if(!API){m.textContent="Os comentários ainda não estão ligados.";return false}
+ btn.disabled=true;
+ try{const r=await fetch(API,{method:"POST",body:JSON.stringify(Object.assign({previa:PREVIA},dados))});const j=await r.json();
+  if(!j.ok)throw 0;
+  LINHAS.push(Object.assign({data:new Date().toISOString()},dados));renderAll();return true}
+ catch(e){m.textContent="Não consegui enviar agora. Confira a internet e tente de novo.";return false}
+ finally{btn.disabled=false}
+}
+const tit=id=>{const p=P.find(x=>x.id===id);return p?p.t:""};
+document.addEventListener("click",async e=>{
+ const go=e.target.closest("[data-go]");
+ if(go){document.getElementById(go.dataset.go).scrollIntoView({behavior:"smooth",block:"start"});return}
+ const s=e.target.closest("[data-send]");
+ if(s){const k=s.dataset.send,[id,onde]=k.split("|"),ta=document.querySelector(`[data-t="${k}"]`);const nome=precisaNome();if(!nome)return;
+  const texto=ta.value.trim();if(!texto){ta.focus();return}
+  if(await enviar({tipo:"comentario",post:id,titulo:tit(id),onde,nome,texto},k,s))ta.value="";return}
+ const ok=e.target.closest("[data-ok]");
+ if(ok){const id=ok.dataset.ok,nome=precisaNome();if(!nome)return;
+  await enviar({tipo:"decisao",post:id,titulo:tit(id),onde:"post",nome,texto:"",decisao:"aprovado"},id+"|post",ok);
+  document.querySelector(`[data-fb="${id}"]`).classList.remove("on");return}
+ const fo=e.target.closest("[data-fixopen]");
+ if(fo){const b=document.querySelector(`[data-fb="${fo.dataset.fixopen}"]`);b.classList.toggle("on");if(b.classList.contains("on"))b.querySelector("textarea").focus();return}
+ const fx=e.target.closest("[data-fix]");
+ if(fx){const id=fx.dataset.fix,nome=precisaNome();if(!nome)return;const ta=document.querySelector(`[data-t="${id}|post"]`),texto=ta.value.trim();if(!texto){ta.focus();return}
+  if(await enviar({tipo:"decisao",post:id,titulo:tit(id),onde:"post",nome,texto,decisao:"correcao"},id+"|post",fx)){ta.value="";document.querySelector(`[data-fb="${id}"]`).classList.remove("on")}}
+});
+document.addEventListener("play",e=>{document.querySelectorAll("video").forEach(v=>{if(v!==e.target)v.pause()})},true);
+carregar();
+}
+</script>
+</body>
+</html>
